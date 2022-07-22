@@ -1,0 +1,191 @@
+body {
+font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+background-color: rgb(229, 236, 243);
+}
+
+.main {
+    padding: 20px;
+    min-width: 280px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Menu */
+
+#menu {
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: rgb(59, 55, 55);
+    display: block;
+    border-radius: 5px;
+    transition: 3.3s ease;
+}
+#bar1{
+    transform: translateY(-4px);
+}
+#bar3{
+    transform: translateY(4px);
+}
+.nav li a
+{
+    color: black;
+    text-decoration: none;
+}
+.nav li a:hover
+{
+    font-weight: bold;
+}
+.nav li
+{
+    list-style: none;
+    padding: 16px 0;
+}
+.nav
+{
+    padding: 0;
+    margin: 0 20px;
+    transition: 0.3s ease;
+    display: none;
+}
+.menu-bg, #menu-bar{
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+.menu-bg{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    margin: 30px 0 20px 20px;
+    background:  radial-gradient(circle,red,rgb(184, 50, 50));
+    border-radius: 50%;
+    transition: 0.3s ease;
+
+}
+#menu-bar{
+    z-index: 2;
+}
+.change-bg
+{
+    width: 550px;
+    height: 540px;
+    transform: translate(-60%,-30%);
+}
+.change .bar{
+    background-color: aliceblue;
+}
+.change #bar1{
+    transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+    transform: translateY(-5px) rotate(45deg);
+}
+.change #bar2{
+    opacity:0;
+}
+.change{
+    display: block;
+}
+/* Fim menu */
+
+/* logo */
+.logon{margin: auto;
+    align-items: center;
+    position: relative;
+    left: 250px;
+    width: 500px;
+    height: 500px;
+   
+}
+/* Fim logo */
+
+/* Slides */
+.content {
+    height: 420px;
+    width: 800px;
+    border-radius: 0px;
+    overflow: hidden;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.barr {
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.barr:hover {
+    background-color: white;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide {
+    width: 25%;
+    transition: .4s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -75%;
+}
+/* Fim slides */
+
+
+/* Inicio txt */
+.txt{
+    margin: auto;
+    position: absolute;
+    left: 280px;
+    max-width: 750px;
+    min-width: 280px;
+    height: 0px;
+}
+/* Fim txt */
